@@ -1,8 +1,3 @@
-# Webdev Brain
-As webdeveloper I see daily tons of good resources and want to share them with the community.
-
-I tried them to categorize and give them a structure.
-
 ###Type of Content
 
 * Concept - General view on how to design and create things
