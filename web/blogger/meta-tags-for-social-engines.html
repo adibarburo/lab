@@ -1,0 +1,53 @@
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+	<!-- fb -->
+	<meta expr:content='&quot;ro_RO&quot;' property='og:locale'/>
+	<meta content='article' property='og:type'/>
+	<meta expr:content='data:blog.pageName' property='og:title'/>
+
+	<b:if cond='data:blog.metaDescription'>
+  		<meta expr:content='data:blog.metaDescription' property='og:description'/>
+	</b:if>
+
+	<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+	<meta content='https://www.facebook.com/*userPage*' property='article:publisher'/>
+	<meta content='*Site name*' property='og:site_name'/>
+
+	<b:if cond='data:blog.postImageUrl'>
+		<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+	</b:if>
+  	<!-- tw -->
+	<meta content='summary' name='twitter:card'/>
+	<meta content='www.*yourSite*' name='twitter:site'/>
+
+	<b:if cond='data:blog.metaDescription'>
+  		<meta expr:content='data:blog.metaDescription' property='twitter:description'/>
+	</b:if>
+
+	<meta expr:content='data:blog.pageName' name='twitter:title'/>
+
+	<b:if cond='data:blog.postImageUrl'>
+		<meta expr:content='data:blog.postImageUrl' property='twitter:image'/>
+	</b:if>
+  <meta expr:content='data:blog.metaDescription' itemprop='description'/>
+	<!---->
+
+
+<b:else/>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<b:if cond='data:blog.pageType != &quot;archive&quot;'>
+<b:if cond='!data:blog.searchLabel'>
+	<meta expr:content='&quot;ro_RO&quot;' property='og:locale'/>
+	<meta content='website' property='og:type'/>
+	<meta expr:content='data:blog.title' property='og:title'/>
+	<b:if cond='data:blog.metaDescription'>
+  		<meta expr:content='data:blog.metaDescription' property='og:description'/>
+	</b:if>
+	<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+	<b:if cond='data:blog.postImageUrl'>
+		<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+	</b:if>
+
+	</b:if>
+	</b:if>
+	</b:if>
+</b:if>
