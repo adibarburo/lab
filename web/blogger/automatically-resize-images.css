@@ -1,0 +1,23 @@
+.post-body img {
+   width: $(content.width);
+   height: auto;
+   margin-left: -1em;
+   padding: 0;
+   border: none;
+   max-width: 100%;
+}
+
+.post-body .tr-caption-container {
+   padding: 0;
+}
+
+.post-body .tr-caption-container img {
+   padding: 0;
+   display: block;
+   width: $(content.width);
+   height: auto;
+   margin-left: 0;
+   max-width: 100%;
+   background: transparent;
+   border: none;
+}
